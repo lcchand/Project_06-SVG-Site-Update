@@ -1,0 +1,35 @@
+/*-------------------------------*/
+/*   _variables.scss             */
+/*-------------------------------*/
+
+// Descriptive Color Variables
+
+$white         : #fff;
+$black         : #111;
+$lightgray     : #edeff0;
+$blue          : #39ADD1;
+$paw           : #F4C6A6;
+$whitenose     : #FBFEFF;
+$blacknose     : #2D3339;
+$red           : #BA8058;
+$fawn          : #EAAA7F;
+$sable         : #844B24;
+$blacktan      : #52595F;
+
+
+
+// Font Stacks
+
+$stack-Roboto  : 'Roboto Slab', serif;
+
+
+//Asset Paths
+
+$path-img      : 'images';
+$path-svgs     : 'svgs';
+
+
+// Media query Breakpoints
+
+$brk-mobile    : '(min-width: 320px) and (max-width: 419px)';
+$brk-desktop   : '(min-width: 420px)';

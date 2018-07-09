@@ -1,0 +1,89 @@
+/*-------------------------------*/
+/*   _images.scss                */
+/*-------------------------------*/
+
+/*--- Paw Print Kennels Logo ----*/
+.ppklogo {
+  width: 140px;
+  height: 120px;
+}
+
+h1[class="ppktext"] {
+  color: $paw;
+  margin: 0;
+
+  @media #{$brk-desktop} {
+    display: none;
+  }
+}
+ 
+svg[class="ppklogo"] {
+  .st0 {
+    fill: $red;
+    }
+  .st1 {
+    fill: $fawn;
+    @media #{$brk-mobile} {
+      opacity: 0;
+    }
+  
+    @media #{$brk-desktop} {
+      opacity: 1;
+    }
+  }
+  .st2 {
+    fill: $paw;
+    }
+}
+// End of Paw Print Kennels logo
+
+
+
+/*--- Corgis --------------------*/
+//*** Size All 4 Coat Color Corgis
+.corgi {
+  width: 170px;
+ height: 170px;
+}
+
+//*** Color each Corgi SVG using mixin
+
+// Red Corgi
+svg[class~="red"] {
+  @include corgi-colors($red, $whitenose, $blacknose, $fawn)
+}
+
+// Fawn Corgi
+svg[class~="fawn"] {
+  @include corgi-colors($fawn, $whitenose, $blacknose, $paw)
+}
+
+// Sable Corgi
+svg[class~="sable"] {
+  @include corgi-colors($sable, $whitenose, $blacknose, $red)
+}
+
+
+// Black and Tan Corgi
+svg[class~="blackandtan"] {
+  @include corgi-colors($red, $blacktan, $whitenose, $blacknose)
+}
+
+// End of Corgi Coat colors
+
+
+/*--- Navigation Menu -----------*/
+
+// Size & color svgs
+.navicons {
+  height: 13px;
+  fill: $blue;
+}
+
+
+
+// Visit Us Map Pin Icon
+svg[class~="location"] {
+  height: 14px; // Original Height on PNG
+}
+

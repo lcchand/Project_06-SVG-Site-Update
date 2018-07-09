@@ -1,0 +1,21 @@
+/*    _Mixins                    */
+
+// SVGs Corgi colors
+
+@mixin corgi-colors($st0, $st1, $st2, $st3) {
+  .st0 {
+    fill: $st0;
+    opacity: 1;
+  }
+  .st1 {
+    fill: $st1;
+  }
+  .st2 {
+    fill: $st2;
+  }
+  .st3 {
+    fill: $st3;
+  }
+}
+
+  

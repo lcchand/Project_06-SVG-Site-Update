@@ -1,0 +1,41 @@
+/*-------------------------------*/
+/*   _base.scss                  */
+/*-------------------------------*/
+
+body {
+  margin: 0;
+  padding: 0;
+  @extend %centered;
+  font-family: $stack-Roboto;
+  font-weight: 300;
+  color: $black;
+  background: url('../#{$path-svgs}/background.svg') $lightgray;
+  background-size: 53px 50px;
+}
+
+p {
+  max-width: 350px;
+  margin: 35px auto 0;
+  line-height: 2em;
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+  color: $blue;
+  font-weight: 700;
+  
+  &:hover {
+    color: $black;
+    transition: .4s ease-out;
+    &>svg .st0 {
+      fill: $black;
+      transition: .4s ease-out;
+    }
+  }
+
+  
+
+}
+
+
